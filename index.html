@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript - Introdução</title>
+        <link href="reset.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <script type=" text/javascript" src="main.js"></script>
+    </head>
+
+    <body onload="load()">
+
+        <header>
+            <h1 class="title">Minha Página com JS</h1>
+        </header>
+
+        <main>
+            <div class="conteiner">
+            <p class="text">Nesse site contem HTML5, CSS3, e JS.</p>
+            </div>
+
+            <button type="button" onclick="clicou()">clique aqui</button>
+            <p id="agradecimento" onclick="redirecionar()"></p>
+            <p id="mouseover" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mause aqui.</p>       
+            <p id="mouseover2" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mause aqui.</p>
+            <select onchange="funcaoChange(this)">
+                <option value="1">"Valor 1"</option>
+                <option value="2">"Valor 2"</option>
+                <option value="3">"Valor 3"</option>
+            </select>
+        </main>
+
+    </body>
+
+</html>
